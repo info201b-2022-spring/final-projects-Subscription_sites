@@ -16,6 +16,14 @@ Finding Data
 We are lucky enough to live in a time when there is lots of publicly available data made possible by governments, journalists, academics, and companies. In this section, you will identify and download at least 3 sources of data related to your domain of interest described above (into a folder you create called data/). You won't be required to use all of these sources, but it will give you practice discovering data. If your data is made available through a Web API, you don't need to download it. For each source of data, provide the following information:
 
 - Where did you download the data (e.g., a web URL)?
+  
+  We found datasets from the Kaggle. The links for each dataset are below:
+  
+1. https://www.kaggle.com/datasets/prasertk/netflix-subscription-price-in-different-countries
+
+2. https://www.kaggle.com/datasets/ruchi798/movies-on-netflix-prime-video-hulu-and-disney
+
+3.
 
 - How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or - - what the data is about?
 
