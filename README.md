@@ -6,12 +6,15 @@ Domain of interest
 As we've discussed, data science can expose underlying patterns in any domain that uses or collects data (which is nearly any domain). Anything from the forced relocation of homeless individuals (Links to an external site.) to how people gender representation (Links to an external site.) in the media, data can expose interesting (and actionable) patterns. In this section, you'll identify a domain that you are interested in (e.g., music, education, dance, immigration -- any field of your interest) and answer the following questions in your README.md file:
 
 - Why are you interested in this field/domain?
+
 We are interested in this domain because it is something that each of us use in our daily lives among with millions of other people around the world. We believed it would be insightful to gather data about these platforms and share it with our peers. Netflix was the first streaming service of its kind to produce original movies and as it continues to grow and hold a dominant position in this field we were intrigued to analyse its data in greater detail.
 We also chose to explore the available movies across other sites so we could discover the advantages and disadvantages of each site in comparison to one another. 
 
 - What other examples of data driven project have you found related to this domain (share at least 3)?
 https://businesschronicler.com/swot/netflix-swot-analysis/#:~:text=In%202020%2C%20Netflix%20had%20annual,98.48%25%20from%20the%20previous%20year
+
 https://www.tomsguide.com/us/best-streaming-video-services,review-2625.html
+
 https://towardsdatascience.com/data-analysis-on-ott-platforms-which-service-should-i-choose-8eed953ff7d2
 
 - What data-driven questions do you hope to answer about this domain (share at least 3)?
