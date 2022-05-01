@@ -11,6 +11,7 @@ We are interested in this domain because it is something that each of us use in 
 We also chose to explore the available movies across other sites so we could discover the advantages and disadvantages of each site in comparison to one another. 
 
 - What other examples of data driven project have you found related to this domain (share at least 3)?
+
 https://businesschronicler.com/swot/netflix-swot-analysis/#:~:text=In%202020%2C%20Netflix%20had%20annual,98.48%25%20from%20the%20previous%20year
 
 https://www.tomsguide.com/us/best-streaming-video-services,review-2625.html
