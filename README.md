@@ -1,5 +1,5 @@
 # final-projects-Subscription_sites
-final-projects-Subscription_sites created by Sky Shen, Sarah Dicker, and Elena Whelan.
+final-projects-Subscription_sites created by Sky Shen, Sarah Dicker, Elena Whelan, and Vansh Tyagi.
 
 
 Domain of interest
