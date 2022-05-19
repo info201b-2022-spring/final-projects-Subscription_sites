@@ -6,8 +6,15 @@ library(ggpubr)
 runtime <- read.csv("/Users/elenawhelan/Desktop/INFO-201/final-projects-Subscription_sites/data/NetflixOriginals.csv")
 head(runtime)
 colnames(runtime)
+
 sum(duplicated('runtime'))
 sum(is.na('runtime'))
+
+summary(runtime)
+#The above code gives us following information:
+  #1. The total amount movies (unique observations) are 584.
+  #2. The Maximum IMDB score of the movies is 9 and the minimum is 2.5
+  #3. The Maximum Runtime for the movies is 209 and the average is 93.58
 
 #amount of movies per genre
 genre_num <- runtime %>%
