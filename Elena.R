@@ -24,3 +24,10 @@ head(most_viewed)
 ggplot(data = most_viewed) + geom_bar(mapping = aes(x = Genre , fill = IMDB.Score)) +
   labs(title = " Most viewed movie Genre") +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 0.5))
+#From this plot, we get to know that out of the 584 movies, the most viewed movie genre is documentary 
+
+#Most viewed movie runtime
+ggplot(data = most_viewed) + geom_bar(mapping = aes(x = Runtime , fill=IMDB.Score)) +
+  labs(title = " Most viewed movie Runtime") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 0.5))
+#this plot shows that they most viewed movie runtimes are 100 minutes
