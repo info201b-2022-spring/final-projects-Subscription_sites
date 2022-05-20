@@ -5,7 +5,11 @@ Our summary information calculated the following information based on the Movies
 
 
 map plot
+
 This map plot shows a visualisation of the subscription fees of Netflix in the world. These figures are based on data from both basic and standard subscription fees per month. We calculated the mean, maximum and minimum of the total fee per continent. For example, we calculated that North America has a mean total fee of $19.9 per month. The most expensive subscription fees are in central Europe, with a maximum total fee cost of $33.34 per month. The cheapest subscription fees are in Asia, with a minimum total fee cost of $4.97 per month.
 
 bar plot
-This bar plot shows a visualisation of the number of movies that had an IMBD rating of 90%+ per year, beginning in 2015. In 2015, approx. 350 movies had a rating of 90% or more, with just under 500 movies in 2016, 600 movies in 2017, 550 movies in 2018, 500 movies in 2019, just under 500 movies in 2020 and just over 200 movies in 2021. 
+
+This bar plot shows a visualisation of the number of movies that had an IMBD rating of 90%+ per year, beginning in 2015. In 2015, approx. 350 movies had a rating of 90% or more, with just under 500 movies in 2016. 2017 had the highest amount of movies with a score of 90% or more at a total of 600. It then began to decrease again as 2018, 2019, 2020 and 2021 all had less than 600 movies with a rating of 90% or above. 2021 also had the lowest rating out of each of the years. 
+
+
