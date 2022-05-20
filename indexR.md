@@ -7,3 +7,7 @@ Using our second dataset, our summary information calculated the following infor
 
 # Aggregate Table Observations
 
+
+
+# Scatter plot
+This plot visualizes the correlation between two variable from our third dataset, each movie's runtime and their corresponding IMDB score. 
