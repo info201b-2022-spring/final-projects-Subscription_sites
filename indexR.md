@@ -1,39 +1,4 @@
-# Our Domain
 We are interested in this domain because it is something that each of us use in our daily lives among with millions of other people around the world. We believed it would be insightful to gather data about these platforms and share it with our peers. Netflix was the first streaming service of its kind to produce original movies and as it continues to grow and hold a dominant position in this field we were intrigued to analyse its data in greater detail.
 We also chose to explore the available movies across other sites so we could discover the advantages and disadvantages of each site in comparison to one another. 
 
-# Summary Information
-Using our second dataset, our summary information calculated the following information based on the Movies on Netflix, Prime Video, Hulu and Disney+. The total number of movies studied in this data set was 5,368. The minimum year of creation of these movies dated back to 1904, with the most recent movie dating to 2021. When studying which platform offered the most movies from this list, Netflix offered the most, totalling to 1,971 movies. Prime Video offered 1,831, Hulu offered 1,621 and Disney+ offered just 351 of these movies. This confirms our original assumption that Netflix holds the dominant position in the streaming platforms industry, offering the most amount of movies to customers, in addition to providing their very own Netflix original movies. 
-
-# Aggregate Table Observations
-
-
-
-# Scatter Plot
-This plot visualizes the correlation between two variables from our third dataset, each movie's runtime and their corresponding IMDB score. From this plot we can see that there is no correlation. This is because R is equal to -0.038. The closer R is to zero, the weaker the linear relationship is. We can also see that the p value equates to 0.46 which is much greater tha the significance value of 0.05.
-
-# Map Plot
-This map plot shows a visualisation of the subscription fees of Netflix in the world. These figures are based on data from both basic and standard subscription fees per month. We calculated the mean, maximum and minimum of the total fee per continent. For example, we calculated that North America has a mean total fee of $19.9 per month. The most expensive subscription fees are in central Europe, with a maximum total fee cost of $33.34 per month. The cheapest subscription fees are in Asia, with a minimum total fee cost of $4.97 per month. 
-
----
-title: "Report"
-author: "Author Name"
-date: "`r Sys.Date()`"
-output: openintro::lab_report
----
-```{r load-packages, message=FALSE}
-
-```
-We are interested in this domain because it is something that each of us use in our daily lives among with millions of other people around the world. We believed it would be insightful to gather data about these platforms and share it with our peers. Netflix was the first streaming service of its kind to produce original movies and as it continues to grow and hold a dominant position in this field we were intrigued to analyse its data in greater detail. We also chose to explore the available movies across other sites so we could discover the advantages and disadvantages of each site in comparison to one another.
-
-```{r }
-summary_info
-
-```
-
-Using our second dataset, our summary information calculated the following information based on the Movies on Netflix, Prime Video, Hulu and Disney+. The total number of movies studied in this data set was 5,368. The minimum year of creation of these movies dated back to 1904, with the most recent movie dating to 2021. When studying which platform offered the most movies from this list, Netflix offered the most, totalling to 1,971 movies. Prime Video offered 1,831, Hulu offered 1,621 and Disney+ offered just 351 of these movies. This confirms our original assumption that Netflix holds the dominant position in the streaming platforms industry, offering the most amount of movies to customers, in addition to providing their very own Netflix original movies.
-
-
-```{r }
-each_county_info
-```
+Our summary information calculated the following information based on the Movies on Netflix, Prime Video, Hulu and Disney+ dataset. The total number of movies studied in this data set was 5,368. The minimum year of creation of these movies dated back to 1904, with the most recent movie dating to 2021. When studying which platform offered the most movies from this list, Netflix offered the most, totalling to 1,971 movies. Prime Video offered 1,831, Hulu offered 1,621 and Disney+ offered just 351 of these movies. This confirms our original assumption that Netflix holds the dominant position in the streaming platforms industry, offering the most amount of movies to customers, in addition to providing their very own Netflix original movies. 
