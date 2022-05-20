@@ -28,20 +28,9 @@ most_viewed <- runtime %>%
   filter(IMDB.Score >= 6)
 head(most_viewed)
 
-ggplot(data = most_viewed) + geom_bar(mapping = aes(x = Genre , fill = IMDB.Score)) +
-  labs(title = " Most viewed movie Genre") +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 0.5))
-#From this plot, we get to know that out of the 584 movies, the most viewed movie genre is documentary 
-
-#Most viewed movie runtime
-ggplot(data = most_viewed) + geom_bar(mapping = aes(x = Runtime , fill=IMDB.Score)) +
-  labs(title = " Most viewed movie Runtime") +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 0.5))
-#this plot shows that they most viewed movie runtimes are 100 minutes
-
-#Vizualizing the correlation between two variables: Movie Runtime and IDMB Score 
+#Vizualizing the correlation between two variables: Movie Runtime and IMDB Score 
 ggscatter(most_viewed, x = "Runtime", y = "IMDB.Score", 
           add = "reg.line", conf.int = TRUE, 
           cor.coef = TRUE, cor.method = "pearson",
           xlab = "Movie Runtime", ylab = "IMDB Score")
-#from this plot we can see that thre is no correlation
+#from this plot we can see that there is no correlation
