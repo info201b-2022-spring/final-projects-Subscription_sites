@@ -1,0 +1,60 @@
+---
+title: "Exploratary dataset on Streaming subscription sites"
+author: "Sky Shen, Elena Whelan, Sarah Dicker, Vansh Tyagi"
+date: "May 20, 2022`"
+output: openintro::lab_report
+---
+```{r load-packages, message=FALSE}
+source("summary.R")
+source("map.R")
+source("aggregate.R")
+source("bar.R")
+source("scatter.R")
+```
+
+
+
+
+## Introduction
+
+We are interested in this domain because it is something that each of us use in our daily lives among with millions of other people around the world. We believed it would be insightful to gather data about these platforms and share it with our peers. Netflix was the first streaming service of its kind to produce original movies and as it continues to grow and hold a dominant position in this field we were intrigued to analyse its data in greater detail. We also chose to explore the available movies across other sites so we could discover the advantages and disadvantages of each site in comparison to one another.
+
+## Summary Information
+
+```{r }
+summary_info
+
+```
+
+Using our second dataset, our summary information calculated the following information based on the Movies on Netflix, Prime Video, Hulu and Disney+. The total number of movies studied in this data set was 5,368. The minimum year of creation of these movies dated back to 1904, with the most recent movie dating to 2021. When studying which platform offered the most movies from this list, Netflix offered the most, totalling to 1,971 movies. Prime Video offered 1,831, Hulu offered 1,621 and Disney+ offered just 351 of these movies. This confirms our original assumption that Netflix holds the dominant position in the streaming platforms industry, offering the most amount of movies to customers, in addition to providing their very own Netflix original movies.
+
+## Aggregate Table Observations
+
+```{r }
+each_county_info
+```
+Then, we started to focus on the numbers of movies of Netflix and subscriptions fees in each Continents. We firstly group the data into different *Continents*, and find that the The Europe has the highest average subscription fee which is nearly $22.42, and the Africa
+has the lowest average subscription fee which is nearly $16.31. However, the average numbers of movies on Netflix for Africa is highest which is 2050, and the Eroupe has the lowest average numbers of movies on Netflix which is 1702. In the table, we can also check which county has max or min of number of movies and subscription fee in each continent.
+
+## Chart 1 - Map plot
+```{r }
+map_plot
+```
+This map plot shows a visualisation of the subscription fees of Netflix in the world. These figures are based on data from both basic and standard subscription fees per month. We calculated the mean, maximum and minimum of the total fee per continent. For example, we calculated that North America has a mean total fee of 19.9 dollars per month. The most expensive subscription fees are in central Europe, with a maximum total fee cost of 33.34 dollars per month. The cheapest subscription fees are in Asia, with a minimum total fee cost of $4.97 per month. 
+
+## Chart 2 - Bar plot
+
+```{r }
+barplot(each_year_ratings$total_90_plus, names = each_year_ratings$Year,
+                                   main = "Number of movies rated 90%+ per year (after 2015)", 
+                                   xlab = "Year", ylab = "No. movies with 90%+ rating")
+```
+
+This bar plot shows a visualisation of the number of movies that had an IMBD rating of 90%+ per year, beginning in 2015. In 2015, approx. 350 movies had a rating of 90% or more, with just under 500 movies in 2016. 2017 had the highest amount of movies with a score of 90% or more at a total of 600. It then began to decrease again as 2018, 2019, 2020 and 2021 all had less than 600 movies with a rating of 90% or above. 2021 also had the lowest rating out of each of the years.
+
+## Chart 3 - Scatter plot
+
+```{r }
+scartter_plot 
+```
+This plot visualizes the correlation between two variables from our third dataset, each movie's runtime and their corresponding IMDB score. From this plot we can see that there is no correlation. This is because R is equal to -0.038. The closer R is to zero, the weaker the linear relationship is. We can also see that the p value equates to 0.46 which is much greater tha the significance value of 0.05.
