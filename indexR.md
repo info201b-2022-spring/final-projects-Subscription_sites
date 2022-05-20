@@ -9,6 +9,9 @@ Using our second dataset, our summary information calculated the following infor
 
 
 
-# Scatter plot
+# Scatter Plot
 This plot visualizes the correlation between two variables from our third dataset, each movie's runtime and their corresponding IMDB score. From this plot we can see that there is no correlation. This is because R is equal to -0.038. The closer R is to zero, the weaker the linear relationship is. We can also see that the p value equates to 0.46 which is much greater tha the significance value of 0.05.
+
+# Map Plot
+This map plot shows a visualisation of the subscription fees of Netflix in the world. These figures are based on data from both basic and standard subscription fees per month. We calculated the mean, maximum and minimum of the total fee per continent. For example, we calculated that North America has a mean total fee of $19.9 per month. The most expensive subscription fees are in central Europe, with a maximum total fee cost of $33.34 per month. The cheapest subscription fees are in Asia, with a minimum total fee cost of $4.97 per month. 
 
