@@ -1,7 +1,7 @@
 ---
-title: "Report"
-author: "Author Name"
-date: "`r Sys.Date()`"
+title: "Exploratary dataset on Streaming subscription sites"
+author: "Sky Shen, Elena Whelan, Sarah Dicker, Vansh Tyagi"
+date: "May 20, 2022`"
 output: openintro::lab_report
 ---
 ```{r load-packages, message=FALSE}
