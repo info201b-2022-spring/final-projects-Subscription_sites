@@ -36,6 +36,7 @@ has the lowest average subscription fee which is nearly $16.31. However, the ave
 ```{r }
 map_plot
 ```
+This map plot shows a visualisation of the subscription fees of Netflix in the world. These figures are based on data from both basic and standard subscription fees per month. We calculated the mean, maximum and minimum of the total fee per continent. For example, we calculated that North America has a mean total fee of $19.9 per month. The most expensive subscription fees are in central Europe, with a maximum total fee cost of $33.34 per month. The cheapest subscription fees are in Asia, with a minimum total fee cost of $4.97 per month. 
 
 
 ## Chart 2 - Bar plot
