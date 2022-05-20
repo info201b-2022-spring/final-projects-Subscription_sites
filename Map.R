@@ -32,4 +32,3 @@ map_plot <- ggplot(world_shape) +
   scale_fill_continuous(low = "#132B43", high = "Red") +
   labs(title = "The subscription fee of Netflix in the world", fill = "Subscription fee $") +
   blank_theme
-
