@@ -10,4 +10,4 @@ Using our second dataset, our summary information calculated the following infor
 
 
 # Scatter plot
-This plot visualizes the correlation between two variable from our third dataset, each movie's runtime and their corresponding IMDB score. 
+This plot visualizes the correlation between two variables from our third dataset, each movie's runtime and their corresponding IMDB score. From this plot we can see that there is no correlation as R is equal to -0.038. The closer R is to zero, the weaker the linear relationship is. We can also see that the p value equates to 0.46 which is much greater tha the significance value of 0.05. 
