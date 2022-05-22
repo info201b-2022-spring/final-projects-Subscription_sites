@@ -45,7 +45,7 @@ This map plot shows a visualisation of the subscription fees of Netflix in the w
 ## Chart 2 - Bar plot
 
 ```{r }
-each_year_ratings_graph
+bar_plot
 ```
 
 This bar plot shows a visualisation of the number of movies that had an IMBD rating of 90%+ per year, beginning in 2015. In 2015, approx. 350 movies had a rating of 90% or more, with just under 500 movies in 2016. 2017 had the highest amount of movies with a score of 90% or more at a total of 600. It then began to decrease again as 2018, 2019, 2020 and 2021 all had less than 600 movies with a rating of 90% or above. 2021 also had the lowest rating out of each of the years.
