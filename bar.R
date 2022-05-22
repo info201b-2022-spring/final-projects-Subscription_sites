@@ -10,7 +10,7 @@ each_year_ratings <- summarize(
   total_90_plus = length(Rotten.Tomatoes >= 90/100)
 )
 
-each_year_ratings_graph <- barplot(each_year_ratings$total_90_plus, names = each_year_ratings$Year,
+bar_plot <- barplot(each_year_ratings$total_90_plus, names = each_year_ratings$Year,
                                    main = "Number of movies rated 90%+ per year (after 2015)", 
                                    xlab = "Year", ylab = "No. movies with 90%+ rating")
 
