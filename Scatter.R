@@ -13,7 +13,7 @@ most_viewed <- runtime %>%
 head(most_viewed)
 
 #Vizualizing the correlation between two variables: Movie Runtime and IMDB Score 
-ggscatter(most_viewed, x = "Runtime", y = "IMDB.Score", 
+scatter_plot <- ggscatter(most_viewed, x = "Runtime", y = "IMDB.Score", 
           add = "reg.line", conf.int = TRUE, 
           cor.coef = TRUE, cor.method = "pearson",
           xlab = "Movie Runtime", ylab = "IMDB Score")
