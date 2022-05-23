@@ -50,7 +50,7 @@ barplot(each_year_ratings$total_90_plus, names = each_year_ratings$Year,
                                    xlab = "Year", ylab = "No. movies with 90%+ rating")
 ```
 
-This bar plot shows a visualisation of the number of movies that had an IMBD rating of 90%+ per year, beginning in 2015. In 2015, approx. 350 movies had a rating of 90% or more, with just under 500 movies in 2016. 2017 had the highest amount of movies with a score of 90% or more at a total of 600. It then began to decrease again as 2018, 2019, 2020 and 2021 all had less than 600 movies with a rating of 90% or above. 2021 also had the lowest rating out of each of the years.
+This bar plot shows a visualisation of the number of movies that had a Rotten Tomatoes rating of 90%+ per year, beginning in 2015. In 2015, approx. 400 movies had a rating of 90% or more, with just under ~650 movies in 2016. 2019 had the highest amount of movies with a score of 90% or more at a total of above 1000, upto which point a steady increase in movies 90%+ per year can be observed. It then decreases in 2020, with 2021 having the lowest number of highly rated movies.
 
 ## Chart 3 - Scatter plot
 
