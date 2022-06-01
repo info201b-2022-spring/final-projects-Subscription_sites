@@ -5,7 +5,7 @@ library(plotly)
 library(stringr)
 
 tv_shows <- read.csv("/Users/SkyShen/final-projects-Subscription_sites/data/tv_shows.csv")
-#netflix_original <- read.csv("/Users/SkyShen/final-projects-Subscription_sites/data/tv_shows.csv")
+netflix_original <- read.csv("/Users/SkyShen/final-projects-Subscription_sites/data/tv_shows.csv")
 fee_df <- read.csv("/Users/SkyShen/final-projects-Subscription_sites/data/Netflix _fee.csv")
 
 # We need this new dataset (df) which has code for each country to create interactive map in this project
@@ -21,8 +21,13 @@ filter_df <- tv_shows
 intro_page <- tabPanel(
   "Introduction",
   titlePanel("Introduction"),
-  p("This......")
+  p("This......"),
+  
+#  mainPanel(
+#      img(src = "pic1.png", height = 140, width = 400)
+#    )
 )
+
 
 # Page 1 code
 filter_page <- tabPanel(
@@ -39,9 +44,10 @@ filter_page <- tabPanel(
                   value = 70 #default value
       )
       ),
+    
     mainPanel(
       plotOutput(outputId = "scatter", brush = "plot_brush"), # you can drag more than one point
-      tableOutput(outputId = "data"),
+      tableOutput(outputId = "data")
     )
   )
   )
@@ -49,11 +55,25 @@ filter_page <- tabPanel(
 # Page 2 code
 map_page <- tabPanel(
   "page 2",
+  
+  sidebarLayout(
+    sidebarPanel(
+      h3("Contro Panel"),
+      selectInput(
+        inputId = "char",
+        label = "Select a country",
+        choices = fee_df$Country
+      )
+    ),
+
 mainPanel(
   world_map <- plot_ly(fee_df, type='choropleth',locations=fee_df$CODE,
                        z=fee_df$Cost.Per.Month...Standard...., text=fee_df$Country, colorscale="Red") %>% 
     colorbar(title = "Standard fee $") %>% 
-    layout(title = 'Netflix subscription fee in the world')
+    layout(title = 'Netflix subscription fee in the world'),
+  
+  tableOutput(outputId = 'table')
+)
 )
 )
 
@@ -78,22 +98,30 @@ ui <- navbarPage(
 
 # server logic goes here 
 server <- function(input, output){
-  
   output$scatter <- renderPlot({
-    #filter_df <- filter(tv_shows, IMDb >= input$imdb)
     filter_df <- filter(tv_shows, Rotten.Tomatoes >= input$rotten_tomatoes)
     ggplot(data = filter_df, aes(x = IMDb, y = Rotten.Tomatoes)) +
       geom_point(aes(col = Year))
   })
   
-  
-  
   output$data <- renderTable({
     brushedPoints(filter_df, input$plot_brush)
   })
+  
+  make_table_df <- function(char_name) {
+    table_df <- select(fee_df, -c(Country, Country_code,Cost.Per.Month...Premium....,
+                                  Cost.Per.Month...Basic....,CODE,GDP..BILLIONS.))
+    
+    data_pt <-  filter(fee_df, Country == char_name)
+    data_pt <-  select(data_pt, -c(Country, Country_code,Cost.Per.Month...Premium....,
+                                   Cost.Per.Month...Basic....,CODE,GDP..BILLIONS.))
+    return(do.call("rbind", list(data_pt)))
+  }
+  
+  output$table <- renderTable({
+    return(make_table_df(input$char))
+  })
 }
 
-
 # this is the function that makes the shiny app
-
 shinyApp(ui = ui, server = server)
