@@ -4,9 +4,8 @@ library(ggplot2)
 library(plotly)
 library(stringr)
 
-tv_shows <- read.csv("/Users/SkyShen/final-projects-Subscription_sites/data/tv_shows.csv")
-netflix_original <- read.csv("/Users/SkyShen/final-projects-Subscription_sites/data/tv_shows.csv")
-fee_df <- read.csv("/Users/SkyShen/final-projects-Subscription_sites/data/Netflix _fee.csv")
+tv_shows <- read.csv("tv_shows.csv")
+fee_df <- read.csv("Netflix _fee.csv")
 
 #Extract the dataset Netflixoriginals into a dataframe called ratings_df for page 3.
 ratings_df <- read.csv("NetflixOriginals.csv")
