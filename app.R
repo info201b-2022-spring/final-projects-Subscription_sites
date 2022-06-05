@@ -97,6 +97,14 @@ mainPanel(
 third_page <- tabPanel(
   "page 3",
   titlePanel("Netflix Originals' Ratings in Each Year Per Genre"),
+   p("This third interactive page explores the relationship between the genre of a 
+    TV show/movie and how well it does in terms of reviews. There is a select box provided
+    for the user to specify which genre's data they would like to view on the graph, and the use
+    of the brush argument lets users view the selected data in the form of a table (as a subset
+    of the entire dataset). The ideal way to view this data (compare the rating trends across 
+    different genres) is to look at the boxplots for each year in a particular genre, get a 
+    sense of the trend in median values across the years, and then do the same for another genre
+    that you want to compare to."),
   mainPanel(
     plotOutput(outputId = "scatter_2", brush = "brush_2"),
     tableOutput(outputId = "table_info")
