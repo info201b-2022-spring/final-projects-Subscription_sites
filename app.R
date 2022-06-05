@@ -23,9 +23,9 @@ intro_page <- tabPanel(
   titlePanel("Introduction"),
   p("This......"),
   
-#  mainPanel(
-#      img(src = "pic1.png", height = 140, width = 400)
-#    )
+  mainPanel(
+      img(src = "pic1.png", height = 140, width = 400)
+    )
 )
 
 
@@ -33,6 +33,10 @@ intro_page <- tabPanel(
 filter_page <- tabPanel(
   "page 1",
   titlePanel("TV shows data"),
+  p("This interactive page is about comparing the Rotten Tomatoes scores and IMDb scores on
+    each straming platform. Users can filter Rotten Tomatoes score by draging sliders. Moreover,
+    users can drag the point on the graph, so they can check the information of the point they
+    chose by viewing table."),
   sidebarLayout(
     sidebarPanel(
       h5("Controls"),
@@ -44,7 +48,7 @@ filter_page <- tabPanel(
                   value = 70 #default value
       )
       ),
-    
+
     mainPanel(
       plotOutput(outputId = "scatter", brush = "plot_brush"), # you can drag more than one point
       tableOutput(outputId = "data")
@@ -55,7 +59,12 @@ filter_page <- tabPanel(
 # Page 2 code
 map_page <- tabPanel(
   "page 2",
-  
+  titlePanel("The map of the Netflix subscription fee"),
+  p("This is a map including the Netflix standard subscription fee in the world.
+    Users can interact with the map by checking the fee geographically. Also, if users
+    wish to know more information about each country, they can select a specific
+    country in the box and get more information about that country such as the total
+    number of movies in that country, the continent that country from, etc."),
   sidebarLayout(
     sidebarPanel(
       h3("Contro Panel"),
@@ -101,7 +110,8 @@ server <- function(input, output){
   output$scatter <- renderPlot({
     filter_df <- filter(tv_shows, Rotten.Tomatoes >= input$rotten_tomatoes)
     ggplot(data = filter_df, aes(x = IMDb, y = Rotten.Tomatoes)) +
-      geom_point(aes(col = Year))
+      geom_point(aes(col = Year)) +
+      ggtitle("The comparionsn between Rotten.Tomatoes and IMDb")
   })
   
   output$data <- renderTable({
