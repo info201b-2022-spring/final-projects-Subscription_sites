@@ -124,6 +124,7 @@ ui <- navbarPage(
   intro_page,
   filter_page,
   map_page,
+  third_page,
   conclu_page
 )
 
