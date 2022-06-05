@@ -154,6 +154,20 @@ server <- function(input, output){
   output$table <- renderTable({
     return(make_table_df(input$char))
   })
+  
+  output$scatter_2 <- renderPlot({
+    ratings_per_genre <- filter(group_by(ratings_df, Year), Genre == input$genre_movie) 
+    ggplot(data = ratings_per_genre, aes(x = Year, y = IMDB.Score)) +
+      geom_point(aes(col = Runtime)) +
+      geom_smooth(method='lm', formula = y ~ x) +
+      geom_boxplot() + 
+      geom_boxplot(outlier.shape = NA) + 
+      geom_jitter(width = 0.2)
+  })
+  
+  output$table_info <- renderTable({
+    brushedPoints(filter(ratings_per_genre, ratings_per_genre$Genre == input$genre_movie), input$brush_2)
+  })
 }
 
 # this is the function that makes the shiny app
