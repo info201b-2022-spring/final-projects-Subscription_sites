@@ -20,6 +20,10 @@ tv_shows <- tv_shows %>%
           IMDb = str_sub(tv_shows$IMDb, end = -4))
 filter_df <- tv_shows
 
+#Add a new column to ratings_df called "Year" which is extracts only the year from the Premiere column. 
+ratings_df$Year <- gsub(".*,","",ratings_df$Premiere)
+ratings_per_genre <- ratings_df
+
 # Introduction
 intro_page <- tabPanel(
   "Introduction",
@@ -87,6 +91,21 @@ mainPanel(
   tableOutput(outputId = 'table')
 )
 )
+)
+
+#Page 3 code
+third_page <- tabPanel(
+  "page 3",
+  titlePanel("Netflix Originals' Ratings in Each Year Per Genre"),
+  mainPanel(
+    plotOutput(outputId = "scatter_2", brush = "brush_2"),
+    tableOutput(outputId = "table_info")
+  ),
+  selectInput(
+    inputId = "genre_movie",
+    label = h3("Pick a Movie Genre"),
+    choices = unique(ratings_df$Genre)
+  )
 )
 
 #Conclusion
