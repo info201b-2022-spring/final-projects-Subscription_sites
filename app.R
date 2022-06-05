@@ -8,6 +8,9 @@ tv_shows <- read.csv("/Users/SkyShen/final-projects-Subscription_sites/data/tv_s
 netflix_original <- read.csv("/Users/SkyShen/final-projects-Subscription_sites/data/tv_shows.csv")
 fee_df <- read.csv("/Users/SkyShen/final-projects-Subscription_sites/data/Netflix _fee.csv")
 
+#Extract the dataset Netflixoriginals into a dataframe called ratings_df for page 3.
+ratings_df <- read.csv("NetflixOriginals.csv")
+
 # We need this new dataset (df) which has code for each country to create interactive map in this project
 df <- read.csv("https://raw.githubusercontent.com/plotly/datasets/master/2014_world_gdp_with_codes.csv")
 fee_df <- merge(fee_df,df,by.x = "Country", by.y = "COUNTRY")
