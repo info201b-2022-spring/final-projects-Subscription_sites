@@ -145,19 +145,18 @@ conclu_page <- tabPanel(
   titlePanel("Conclusion"),
   p("From our analysis of our three datasets, we gathered the following major takeaways that we found in each our interactive pages:"),
   
-  em("TV Show Dataset:"),
+  strong("TV Show Dataset:"),
   
   p("We found that the Rotten Tomatoes scores were positively correlated to the IMDB scores. As Rotten Tomatoes scores increased, so did that of the IMDB scores."), 
   
-  em("Subscription Fee Dataset:"),
+  strong("Subscription Fee Dataset:"),
   
   p("We noticed that developed countries had a higher subscription fee per month than that of developing counties. We assume this is down to the fact that Netflix subscribers in developing countries have lower incomes, resulting in lower subscription fees. The most expensive subscription fees are in central Europe, with a total fee cost of $33.34 per month. The cheapest are in Asia, with a total fee cost of $4.97 per month."), 
   
-  em("Netflix Originals Dataset:"),
+  strong("Netflix Originals Dataset:"),
   
   p("We discovered that the genre of a movie/ tv show is in fact correlated to it’s probable IMDB rating. For example, documentaries, on average, have a high rating (around 8/10) whereas comedy shows/ movies have a much lower rating (median values generally lie between 5-6/10)."),
   
-  )
 )
 
 
