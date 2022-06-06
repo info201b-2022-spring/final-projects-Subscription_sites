@@ -27,7 +27,20 @@ ratings_per_genre <- ratings_df
 intro_page <- tabPanel(
   "Introduction",
   titlePanel("Introduction"),
-  p("This......"),
+  p("For this project, we created a shiny application dedicated to allowing users to explore our chosen datasets through engaging visualisations and interactions. We chose these datasets as we felt it would be insightful to gather and display data about the variety of streaming platforms (Netflix, Hulu etc.) we use today, and to showcase this to our peers. We wanted to explore this further by answering three major questions through interactive datasets:"),
+  
+  em("1.	TV Show Dataset: What are the highest scored movies based on IMDB and Rotten Tomatoes’ scores and what streaming platforms are they available on?"), 
+
+  p("Using this interactive scatterplot, we can effectively study what movies scored highest and where they are available for customers to watch. We can tailor our searches by using the “Filter by Rotten Tomatoes score” control. In order to discover the names and streaming platforms of these movies, we simply must highlight the area of interest on the scatterplot, which will return a chart of information about these movies."), 
+
+  em("2.	Subscription Fee Dataset: What is the standard Netflix subscription fee ($/month) in different countries of the world?"),
+  
+  p("This world map visualisation helps us to understand the different Netflix subscription fees in US dollars depending on whereabouts you are in the world. The legend to the right of the map shows the different prices per month, through colour coding price to country. By simply hovering over a country, we can see how much their monthly subscription fee is for Netflix customers, e.g.: $12.12 per month for customers in Australia."), 
+  
+  em("3.  Netflix Originals Dataset: How did Netflix Original TV show/ movie rate as an IMDB score based on their genre?"),
+
+  p("Using our third interactive page, we are using a scatterplot to study the relationship between the genre of a Netflix Original TV show or movie and how well it did as an IMDB rating each year. There is a select box underneath the graph that allows the user to choose a specific genre to study. There is also a brush argument that allows users to view the data they have selected in the form of a separate table, allowing a more clear view of the information this dataset provides."),
+  
   
   mainPanel(
       img(src = "pic1.png", height = 140, width = 400)
