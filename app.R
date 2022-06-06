@@ -27,6 +27,21 @@ ratings_per_genre <- ratings_df
 intro_page <- tabPanel(
   "Introduction",
   titlePanel("Introduction"),
+  
+  mainPanel(
+      img(src = "pic1.png", height = 140, width = 400)
+    ),
+  br(),
+  br(),
+  br(),
+  br(),
+  br(),
+  br(),
+  br(),
+  br(),
+  br(),
+  br(),
+  br(),
   p("For this project, we created a shiny application dedicated to allowing users to explore our chosen datasets through engaging visualisations and interactions. We chose these datasets as we felt it would be insightful to gather and display data about the variety of streaming platforms (Netflix, Hulu etc.) we use today, and to showcase this to our peers. We wanted to explore this further by answering three major questions through interactive datasets:"),
   
   em("1.	TV Show Dataset: What are the highest scored movies based on IMDB and Rotten Tomatoes’ scores and what streaming platforms are they available on?"), 
@@ -41,10 +56,6 @@ intro_page <- tabPanel(
 
   p("Using our third interactive page, we are using a scatterplot to study the relationship between the genre of a Netflix Original TV show or movie and how well it did as an IMDB rating each year. There is a select box underneath the graph that allows the user to choose a specific genre to study. There is also a brush argument that allows users to view the data they have selected in the form of a separate table, allowing a more clear view of the information this dataset provides."),
   
-  
-  mainPanel(
-      img(src = "pic1.png", height = 140, width = 400)
-    )
 )
 
 
