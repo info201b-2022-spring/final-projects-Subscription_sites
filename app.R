@@ -29,7 +29,7 @@ intro_page <- tabPanel(
   titlePanel("Introduction"),
   
   mainPanel(
-      img(src = "pic1.png", height = 140, width = 800)
+      img(src = "pic1.png", height = 200, width = 800)
     ),
   br(),
   br(),
